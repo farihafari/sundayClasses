@@ -1,0 +1,76 @@
+div{
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 9;
+    animation-name: abc;
+    animation-duration: 5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 10px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+@keyframes abc {
+    /* from{
+        background-color: brown;
+        font-size: 10px;
+        line-height: 9;
+        border-radius: 0%;
+        top: 0%;
+        left: 0%;
+    }
+    to{
+        left: 30%;
+        top: 20%;
+        background-color: rgb(28, 7, 149);
+        font-size: 20px;
+        line-height: 5;
+        border-radius: 50%;
+    } */
+
+ 0%{
+    background-color: brown;
+    font-size: 10px;
+    line-height: 9;
+    border-radius: 0%;
+    top: 0%;
+    left: 0%;
+    transform: rotate(0deg);
+ }  
+ 30%{
+    background-color: rgb(26, 72, 6);
+    font-size: 13px;
+    line-height: 7;
+    border-radius: 20%;
+    top: 20%;
+    left: 20%;
+    transform: rotate(90deg);
+
+    
+ } 
+ 60%{
+    background-color: rgb(6, 67, 103);
+    font-size: 16px;
+    line-height: 5;
+    border-radius: 40%;
+    top: 40%;
+    left: 40%;
+    transform: rotate(180deg);
+
+ }
+ 100%{
+    background-color: rgb(65, 3, 46);
+    font-size: 20px;
+    line-height: 5;
+    border-radius: 40%;
+    top: 40%;
+    transform: rotate(360deg);
+    left: 40%;
+
+ }
+}
