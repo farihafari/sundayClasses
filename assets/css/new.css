@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.container{
+    display: flex;
+}
+.static-text{
+  color: blue;
+  font-size: 65px; 
+  font-weight: 400; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 10px;
+  width: 100%;
+  white-space: nowrap;
+  text-transform: capitalize;
+  border-right: 5px solid #fff;
+  overflow: hidden;
+  animation: typing 3s linear  infinite ,
+  cursor .5s linear infinite;
+  text-shadow: 2px 0px 13px #fff;
+
+}
+@keyframes cursor {
+    0%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: #fff;
+    }
+}
+@keyframes typing {
+    from{
+width: 0;
+    }
+    
+}

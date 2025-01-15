@@ -54,3 +54,21 @@ li a:hover{
     background-color: #522258;
     color: white;
 }
+main{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 105px;
+    background-color: #1B1833;
+    display: flex;
+    justify-content: center;
+}
+.banner-text, .banner-gif{
+    width: 45%;
+    height: inherit;
+    border: 1px solid ;
+}
+.banner-gif>img{
+    width: 70%;
+    height: 70%;
+}

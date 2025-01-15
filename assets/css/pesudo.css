@@ -1,0 +1,42 @@
+a:link{
+    color: brown;
+}
+a:visited{
+    color: green;
+}a:active{
+    color: palevioletred;
+}
+
+a:hover{
+  
+    color: black;
+}
+
+p::first-letter{
+    font-size: 60px;
+    font-weight: 400;
+    color: brown;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+p::first-line{
+    font-size: 13px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+p:first-child{
+    background-color: aqua;
+}
+p:last-child{
+    background-color: blueviolet;
+}
+p:nth-child(even){
+    background-color: brown;
+}
+p::before{
+    content: "pesudo element";
+}
+p::after{
+    content: "the end";
+
+}
