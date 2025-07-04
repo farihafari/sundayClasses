@@ -1,0 +1,45 @@
+-- CREATE DATABASE newdb
+/*CREATE table categories(
+    id int PRIMARY key AUTO_INCREMENT,
+    name varchar(20)
+)*/
+
+/*insert into categories(name) VALUES 
+( "electronics"),
+("groceries"),
+("mobiles")*/
+/*CREATE table products(
+    pro_id int PRIMARY key AUTO_INCREMENT,
+    pro_name varchar(25),
+    pro_quantity int,
+    pro_price int,
+    pro_cat_id int , FOREIGN key (pro_cat_id) REFERENCES categories(id)
+)*/
+/*INSERT INTO products (pro_name, pro_quantity, pro_price, pro_cat_id) VALUES
+-- Electronics (ID 1)
+('Laptop', 10, 85000, 1),
+('Keyboard', 25, 2500, 1),
+('Mouse', 40, 1200, 1),
+('Monitor', 15, 17000, 1),
+
+-- Groceries (ID 2)
+('Rice Bag', 30, 2000, 2),
+('Cooking Oil', 50, 2800, 2),
+('Flour Pack', 40, 1600, 2),
+('Sugar Pack', 60, 1300, 2),
+
+-- Mobiles (ID 3)
+('iPhone 13', 5, 250000, 3),
+('Samsung Galaxy', 8, 180000, 3),
+('Realme 10', 12, 50000, 3),
+('Infinix Note', 10, 38000, 3);
+*/
+-- update products set pro_quantity = 20 WHERE pro_name = "iPhone 13"
+-- update products set pro_price = pro_price + 1000 WHERE pro_cat_id = 1
+-- SELECT * from products
+ -- SELECT * from products WHERE pro_cat_id = 2
+/* SELECT pro_name,pro_price,pro_quantity,name category from products INNER JOIN categories on products.pro_cat_id = categories.id where categories.name = "electronics"*/
+/*SELECT count(*) as all_products , name from products iNNER JOIN categories on products.pro_cat_id = categories.id GROUP by name */
+/*SELECT sum(pro_quantity) as all_products_qty , name from products iNNER JOIN categories on products.pro_cat_id = categories.id GROUP by name*/
+SELECT sum(pro_price*pro_quantity) as all_products_price , name from products iNNER JOIN categories on products.pro_cat_id = categories.id GROUP by name
+ 

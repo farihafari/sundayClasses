@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.big-img{
+    width: 50%;
+    height: 300px;
+    border: 2px solid green;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+margin: 10% auto;
+padding: 20px;
+}
+#bImg{
+    width: 100%;
+    height: 100%;
+}
+.row{
+    width: 70%;
+    height: 140px;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid green;
+    padding: 10px;
+}
+.col{
+    width: 20%;
+    height: 100px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+
+}
+.sImg{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
